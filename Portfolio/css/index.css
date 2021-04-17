@@ -1,0 +1,49 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #40403D;
+    border-bottom: 10px solid black;
+    padding: 10px 20px;
+}
+nav {
+    text-align: right;
+}
+
+a {
+    display: inline-flex;
+    align-items: center;
+    color: #fff;
+    font-size: 20px;
+    font-family: "Fira Code", monospace;
+    font-weight: 500;
+    text-decoration: none;
+    margin-right: 30px;
+}
+a::before {
+    content: " ";
+    background: #5F3640;
+    width: 10px;
+    height: 10px;
+    margin-right:10px;
+    vertical-align: middle;
+}
+a:hover:before{
+    background: #ac6777;
+}
+
+#button {
+    box-shadow: 3px 3px 0px 1px #000000;    
+    
+    display: inline-block;
+    background-color: #5F3640;
+    padding: 18px 20px;
+}
+#button:hover{
+    background-color: #ac6777;
+    box-shadow: 5px 5px 0px 1px #000000;
+}
+body {
+    background-image: url('C:/Users/moare/GitHub/Curso HTML e CSS Feliz/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
