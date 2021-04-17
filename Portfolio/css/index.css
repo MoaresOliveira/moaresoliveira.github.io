@@ -43,7 +43,7 @@ a:hover:before{
     box-shadow: 5px 5px 0px 1px #000000;
 }
 body {
-    background-image: url('C:/Users/moare/GitHub/Curso HTML e CSS Feliz/Portfolio/bg.jpg');
+    background-image: url('../bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
