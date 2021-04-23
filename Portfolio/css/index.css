@@ -42,7 +42,6 @@ a:hover:before{
 }
 #button {
     box-shadow: 3px 3px 0px 1px #000000;    
-    
     display: inline-block;
     background-color: #5F3640;
     padding: 18px 20px;
