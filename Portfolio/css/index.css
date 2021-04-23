@@ -11,17 +11,14 @@ header {
     padding: 10px 20px;
     align-items: center;
 }
-
 h1 {
     font-family: 'Press Start 2P', cursive;
     color: #ac6777;
     text-shadow: 3px 3px 0px #000000;
 }
-
 nav {
     text-align: right;
 }
-
 a {
     display: inline-flex;
     align-items: center;
@@ -43,7 +40,6 @@ a::before {
 a:hover:before{
     background: #ac6777;
 }
-
 #button {
     box-shadow: 3px 3px 0px 1px #000000;    
     
