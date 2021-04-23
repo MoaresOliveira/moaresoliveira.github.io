@@ -1,10 +1,23 @@
+body {
+    background-image: url('../bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 header {
     display: flex;
     justify-content: space-between;
     background-color: #40403D;
     border-bottom: 10px solid black;
     padding: 10px 20px;
+    align-items: center;
 }
+
+h1 {
+    font-family: 'Press Start 2P', cursive;
+    color: #ac6777;
+    text-shadow: 3px 3px 0px #000000;
+}
+
 nav {
     text-align: right;
 }
@@ -41,9 +54,4 @@ a:hover:before{
 #button:hover{
     background-color: #ac6777;
     box-shadow: 5px 5px 0px 1px #000000;
-}
-body {
-    background-image: url('../bg.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
 }
