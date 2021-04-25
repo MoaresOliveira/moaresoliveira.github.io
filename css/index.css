@@ -3,6 +3,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+/* Header */
 header {
     display: flex;
     justify-content: space-between;
@@ -11,11 +12,18 @@ header {
     padding: 10px 20px;
     align-items: center;
 }
-h1 {
-    font-family: 'Press Start 2P', cursive;
-    color: #ac6777;
-    text-shadow: 3px 3px 0px #000000;
+.logo{
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    box-shadow: 2px 2px 0px 1px #000000;
 }
+.logo:hover{
+    transform: scale(1.1);
+    box-shadow: 3px 3px 0px 1px #000000;
+   
+}
+
 nav {
     text-align: right;
 }
@@ -49,4 +57,65 @@ a:hover:before{
 #button:hover{
     background-color: #ac6777;
     box-shadow: 5px 5px 0px 1px #000000;
+}
+/* Banner Home */
+
+.folder{
+   max-width: 955px; 
+}
+.box {   
+    display: block; 
+    position: absolute;
+    width: 627px;
+    height: 184px;
+    left: 91px;
+    top: 196px;
+    background-color: #3A4042;
+    box-shadow: 5px 5px 0px 1px #000;
+}
+
+.title, .subtitle  {
+    display: flex;
+    font-family: 'Press Start 2P', monospace;
+    text-shadow: 3px 3px 0px #000000;
+    justify-content: space-around;
+}
+.title{
+    color: #A57CFE;
+    margin-top: 44px;
+    font-size: 40px;
+    margin-left: 13px;
+    margin-right: 14px;
+}
+.subtitle {
+    color: white;
+    font-size: 30px;
+    margin: 26px 47px 44px 40px;
+}
+
+.button-banner {
+    box-shadow: 3px 3px 0px 1px #000000;    
+    display: inline-block;
+    background-color: #5F3640;
+    padding: 17px 18px 20px;
+    color: #fff;
+    font-size: 20px;
+    font-family: "Fira Code", monospace;
+    font-weight: 500;
+    width: 170px;
+    height: 60px; 
+    margin-right: 0;
+    cursor: pointer; 
+}
+.button-banner:hover{
+    background-color: #ac6777;
+    box-shadow: 5px 5px 0px 1px #000000;
+}
+.download {
+    margin-left: 181px;
+    margin-top: 338px;
+}
+
+.contatos{
+    margin-left: 112px;
 }
