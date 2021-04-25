@@ -79,6 +79,7 @@ a:hover:before{
     font-family: 'Press Start 2P', monospace;
     text-shadow: 3px 3px 0px #000000;
     justify-content: space-around;
+    cursor: default;
 }
 .title{
     color: #A57CFE;
