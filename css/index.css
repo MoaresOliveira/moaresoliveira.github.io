@@ -1,122 +1,198 @@
-body {
-    background-image: url('../bg.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
+
 /* Header */
 header {
-    display: flex;
-    justify-content: space-between;
-    background-color: #40403D;
-    border-bottom: 10px solid black;
-    padding: 10px 20px;
-    align-items: center;
-}
-.logo{
-    width: 60px;
-    height: 60px;
-    border-radius: 100%;
-    box-shadow: 2px 2px 0px 1px #000000;
-}
-.logo:hover{
-    transform: scale(1.1);
-    box-shadow: 3px 3px 0px 1px #000000;
-   
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #40403D;
+  border-bottom: 10px solid black;
+  padding: 10px 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-nav {
-    text-align: right;
+header .logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  -webkit-box-shadow: 2px 2px 0px 1px #000000;
+          box-shadow: 2px 2px 0px 1px #000000;
 }
-a {
-    display: inline-flex;
-    align-items: center;
-    color: #fff;
-    font-size: 20px;
-    font-family: "Fira Code", monospace;
-    font-weight: 500;
-    text-decoration: none;
-    margin-right: 30px;
+
+header .logo:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-box-shadow: 3px 3px 0px 1px #000000;
+          box-shadow: 3px 3px 0px 1px #000000;
 }
-a::before {
-    content: " ";
-    background: #5F3640;
-    width: 10px;
-    height: 10px;
-    margin-right:10px;
-    vertical-align: middle;
+
+header nav {
+  text-align: right;
 }
-a:hover:before{
-    background: #ac6777;
+
+header nav a {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  margin-right: 30px;
+  font-family: "Fira Code", monospace;
 }
-#button {
-    box-shadow: 3px 3px 0px 1px #000000;    
-    display: inline-block;
-    background-color: #5F3640;
-    padding: 18px 20px;
+
+header nav a::before {
+  content: " ";
+  background: #5F3640;
+  width: 10px;
+  height: 10px;
+  margin-right: 10px;
+  vertical-align: middle;
 }
-#button:hover{
-    background-color: #ac6777;
-    box-shadow: 5px 5px 0px 1px #000000;
+
+header nav a:hover:before {
+  background: #ac6777;
 }
+
+header nav #button {
+  -webkit-box-shadow: 3px 3px 0px 1px #000000;
+          box-shadow: 3px 3px 0px 1px #000000;
+  display: inline-block;
+  background-color: #5F3640;
+  padding: 18px 20px;
+}
+
+header nav #button:hover {
+  -webkit-transform: translate(-2px, -2px);
+          transform: translate(-2px, -2px);
+  background-color: #ac6777;
+  -webkit-box-shadow: 5px 5px 0px 1px #000000;
+          box-shadow: 5px 5px 0px 1px #000000;
+}
+
 /* Banner Home */
-
-.folder{
-   max-width: 955px; 
-}
-.box {   
-    display: block; 
-    position: absolute;
-    width: 627px;
-    height: 184px;
-    left: 91px;
-    top: 196px;
-    background-color: #3A4042;
-    box-shadow: 5px 5px 0px 1px #000;
+section.banner {
+  height: 807px;
+  background-image: url("../bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.title, .subtitle  {
-    display: flex;
-    font-family: 'Press Start 2P', monospace;
-    text-shadow: 3px 3px 0px #000000;
-    justify-content: space-around;
-    cursor: default;
-}
-.title{
-    color: #A57CFE;
-    margin-top: 44px;
-    font-size: 40px;
-    margin-left: 13px;
-    margin-right: 14px;
-}
-.subtitle {
-    color: white;
-    font-size: 30px;
-    margin: 26px 47px 44px 40px;
+section.banner .folder {
+  max-width: 955px;
 }
 
-.button-banner {
-    box-shadow: 3px 3px 0px 1px #000000;    
-    display: inline-block;
-    background-color: #5F3640;
-    padding: 17px 18px 20px;
-    color: #fff;
-    font-size: 20px;
-    font-family: "Fira Code", monospace;
-    font-weight: 500;
-    width: 170px;
-    height: 60px; 
-    margin-right: 0;
-    cursor: pointer; 
-}
-.button-banner:hover{
-    background-color: #ac6777;
-    box-shadow: 5px 5px 0px 1px #000000;
-}
-.download {
-    margin-left: 181px;
-    margin-top: 338px;
+section.banner .folder .box {
+  display: block;
+  position: absolute;
+  width: 627px;
+  height: 184px;
+  left: 91px;
+  top: 196px;
+  background-color: #3A4042;
+  -webkit-box-shadow: 5px 5px 0px 1px #000;
+          box-shadow: 5px 5px 0px 1px #000;
 }
 
-.contatos{
-    margin-left: 112px;
+section.banner .folder .box .title, section.banner .folder .box .subtitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Press Start 2P', monospace;
+  text-shadow: 3px 3px 0px #000000;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  cursor: default;
 }
+
+section.banner .folder .box .title {
+  color: #A57CFE;
+  margin-top: 44px;
+  font-size: 40px;
+  margin-left: 13px;
+  margin-right: 14px;
+}
+
+section.banner .folder .box .subtitle {
+  color: white;
+  font-size: 30px;
+  margin: 26px 47px 44px 40px;
+}
+
+section.banner .folder .button-banner {
+  -webkit-box-shadow: 3px 3px 0px 1px #000000;
+          box-shadow: 3px 3px 0px 1px #000000;
+  display: inline-block;
+  background-color: #5F3640;
+  padding: 17px 18px 20px;
+  color: #fff;
+  font-size: 20px;
+  font-family: "Fira Code", monospace;
+  font-weight: 500;
+  width: 170px;
+  height: 60px;
+  margin-right: 0;
+  cursor: pointer;
+}
+
+section.banner .folder .button-banner:hover {
+  -webkit-transform: translate(-2px, -2px);
+          transform: translate(-2px, -2px);
+  background-color: #ac6777;
+  -webkit-box-shadow: 5px 5px 0px 1px #000000;
+          box-shadow: 5px 5px 0px 1px #000000;
+}
+
+section.banner .folder .download {
+  margin-left: 181px;
+  margin-top: 338px;
+}
+
+section.banner .folder .contatos {
+  margin-left: 112px;
+}
+
+/* Skills */
+section.skills {
+  height: 740px;
+  background: #0B2E3C;
+}
+
+/* Projetos */
+section.projetos {
+  height: 520px;
+  background: #1b1b1b;
+}
+
+/* Sobre */
+section.sobre {
+  height: 793px;
+  background: #336279;
+}
+
+/* Contatos */
+section.contatos {
+  height: 740px;
+  background: #f5f5f5;
+}
+
+/* Footer */
+footer {
+  height: 100px;
+  background: #000;
+}
+/*# sourceMappingURL=index.css.map */
