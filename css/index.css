@@ -170,19 +170,92 @@ section.banner .folder .contatos {
   margin-left: 112px;
 }
 
-section .section-name {
+.skills, .projetos, .sobre, .contatos {
   text-align: center;
 }
 
 /* Skills */
 section.skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 740px;
   background: #0B2E3C;
 }
 
-section.skills h1 {
+section.skills .section-name {
+  display: block;
+  text-align: center;
   padding-top: 50px;
   margin: 0 auto;
+}
+
+section.skills .tech {
+  padding-top: 50px;
+}
+
+section.skills .tech .html, section.skills .tech .css, section.skills .tech .jscript {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 430px;
+  height: 90px;
+  margin-top: 38px;
+}
+
+section.skills .tech .html img, section.skills .tech .css img, section.skills .tech .jscript img {
+  width: 90px;
+  height: 90px;
+}
+
+section.skills .tech .wrapper-skill {
+  margin-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 330px;
+  height: 90px;
+  text-align: left;
+}
+
+section.skills .tech .wrapper-skill .progress-container {
+  margin-top: 16px;
+  width: 320px;
+  height: 40px;
+  background: white;
+  border: 5px inset #131313;
+}
+
+section.skills .tech .wrapper-skill .progress-container .htmlprogress {
+  height: 100%;
+  width: 60%;
+  background: #F16529;
+}
+
+section.skills .tech .wrapper-skill .progress-container .cssprogress {
+  height: 100%;
+  width: 50%;
+  background: #29A9DF;
+}
+
+section.skills .tech .wrapper-skill .progress-container .jsprogress {
+  height: 100%;
+  width: 40%;
+  background: #FFC825;
 }
 
 /* Projetos */
