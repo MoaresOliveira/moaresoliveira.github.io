@@ -5,6 +5,11 @@
           box-sizing: border-box;
 }
 
+h1, h2 {
+  font-family: 'Press Start 2P', monospace;
+  color: #fff;
+}
+
 /* Header */
 header {
   display: -webkit-box;
@@ -87,7 +92,7 @@ header nav #button:hover {
 /* Banner Home */
 section.banner {
   height: 807px;
-  background-image: url("../bg.jpg");
+  background-image: url("/assets/img/bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -112,7 +117,6 @@ section.banner .folder .box .title, section.banner .folder .box .subtitle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-family: 'Press Start 2P', monospace;
   text-shadow: 3px 3px 0px #000000;
   -ms-flex-pack: distribute;
       justify-content: space-around;
@@ -166,10 +170,19 @@ section.banner .folder .contatos {
   margin-left: 112px;
 }
 
+section .section-name {
+  text-align: center;
+}
+
 /* Skills */
 section.skills {
   height: 740px;
   background: #0B2E3C;
+}
+
+section.skills h1 {
+  padding-top: 50px;
+  margin: 0 auto;
 }
 
 /* Projetos */
@@ -178,21 +191,37 @@ section.projetos {
   background: #1b1b1b;
 }
 
+section.projetos h1 {
+  padding-top: 50px;
+}
+
 /* Sobre */
 section.sobre {
   height: 793px;
   background: #336279;
 }
 
+section.sobre h1 {
+  padding-top: 50px;
+}
+
 /* Contatos */
 section.contatos {
   height: 740px;
-  background: #f5f5f5;
+  background: #3b3b3b;
+}
+
+section.contatos h1 {
+  padding-top: 50px;
 }
 
 /* Footer */
 footer {
   height: 100px;
   background: #000;
+}
+
+footer h1 {
+  padding-top: 50px;
 }
 /*# sourceMappingURL=index.css.map */
