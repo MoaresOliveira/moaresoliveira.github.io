@@ -3,6 +3,11 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  outline: none;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 h1, h2 {
@@ -10,7 +15,36 @@ h1, h2 {
   color: #fff;
 }
 
-/* Header */
+section {
+  text-align: center;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1b1b1b;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #555;
+  border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #A57CFE;
+}
+
+.top-button {
+  color: #fff;
+  font-size: 50px;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+}
+
+/*--Header--*/
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -30,15 +64,15 @@ header .logo {
   width: 60px;
   height: 60px;
   border-radius: 100%;
-  -webkit-box-shadow: 2px 2px 0px 1px #000000;
-          box-shadow: 2px 2px 0px 1px #000000;
+  -webkit-box-shadow: 2px 2px 0px 1px #000;
+          box-shadow: 2px 2px 0px 1px #000;
 }
 
 header .logo:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-  -webkit-box-shadow: 3px 3px 0px 1px #000000;
-          box-shadow: 3px 3px 0px 1px #000000;
+  -webkit-box-shadow: 3px 3px 0px 1px #000;
+          box-shadow: 3px 3px 0px 1px #000;
 }
 
 header nav {
@@ -61,7 +95,7 @@ header nav a {
 }
 
 header nav a::before {
-  content: " ";
+  content: '';
   background: #5F3640;
   width: 10px;
   height: 10px;
@@ -74,8 +108,8 @@ header nav a:hover:before {
 }
 
 header nav #button {
-  -webkit-box-shadow: 3px 3px 0px 1px #000000;
-          box-shadow: 3px 3px 0px 1px #000000;
+  -webkit-box-shadow: 3px 3px 0px 1px #000;
+          box-shadow: 3px 3px 0px 1px #000;
   display: inline-block;
   background-color: #5F3640;
   padding: 18px 20px;
@@ -85,11 +119,11 @@ header nav #button:hover {
   -webkit-transform: translate(-2px, -2px);
           transform: translate(-2px, -2px);
   background-color: #ac6777;
-  -webkit-box-shadow: 5px 5px 0px 1px #000000;
-          box-shadow: 5px 5px 0px 1px #000000;
+  -webkit-box-shadow: 5px 5px 0px 1px #000;
+          box-shadow: 5px 5px 0px 1px #000;
 }
 
-/* Banner Home */
+/*--Banner--*/
 section.banner {
   height: 807px;
   background-image: url("/assets/img/bg.jpg");
@@ -117,7 +151,7 @@ section.banner .folder .box .title, section.banner .folder .box .subtitle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  text-shadow: 3px 3px 0px #000000;
+  text-shadow: 3px 3px 0px #000;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   cursor: default;
@@ -132,14 +166,14 @@ section.banner .folder .box .title {
 }
 
 section.banner .folder .box .subtitle {
-  color: white;
+  color: #fff;
   font-size: 30px;
   margin: 26px 47px 44px 40px;
 }
 
 section.banner .folder .button-banner {
-  -webkit-box-shadow: 3px 3px 0px 1px #000000;
-          box-shadow: 3px 3px 0px 1px #000000;
+  -webkit-box-shadow: 3px 3px 0px 1px #000;
+          box-shadow: 3px 3px 0px 1px #000;
   display: inline-block;
   background-color: #5F3640;
   padding: 17px 18px 20px;
@@ -157,24 +191,20 @@ section.banner .folder .button-banner:hover {
   -webkit-transform: translate(-2px, -2px);
           transform: translate(-2px, -2px);
   background-color: #ac6777;
-  -webkit-box-shadow: 5px 5px 0px 1px #000000;
-          box-shadow: 5px 5px 0px 1px #000000;
+  -webkit-box-shadow: 5px 5px 0px 1px #000;
+          box-shadow: 5px 5px 0px 1px #000;
 }
 
-section.banner .folder .download {
-  margin-left: 181px;
+section.banner .folder .button-banner.download {
+  margin-left: -150px;
   margin-top: 338px;
 }
 
-section.banner .folder .contatos {
+section.banner .folder .button-banner.contatos {
   margin-left: 112px;
 }
 
-.skills, .projetos, .sobre, .contatos {
-  text-align: center;
-}
-
-/* Skills */
+/*--Skills--*/
 section.skills {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -187,7 +217,7 @@ section.skills {
       -ms-flex-align: center;
           align-items: center;
   height: 740px;
-  background: #0B2E3C;
+  background-color: #0B2E3C;
 }
 
 section.skills .section-name {
@@ -201,7 +231,7 @@ section.skills .tech {
   padding-top: 50px;
 }
 
-section.skills .tech .html, section.skills .tech .css, section.skills .tech .jscript {
+section.skills .tech div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -210,7 +240,7 @@ section.skills .tech .html, section.skills .tech .css, section.skills .tech .jsc
   margin-top: 38px;
 }
 
-section.skills .tech .html img, section.skills .tech .css img, section.skills .tech .jscript img {
+section.skills .tech img {
   width: 90px;
   height: 90px;
 }
@@ -236,59 +266,63 @@ section.skills .tech .wrapper-skill .progress-container {
   margin-top: 16px;
   width: 320px;
   height: 40px;
-  background: white;
+  background-color: #fff;
   border: 5px inset #131313;
+}
+
+section.skills .tech .wrapper-skill .progress-container div {
+  margin: 0;
 }
 
 section.skills .tech .wrapper-skill .progress-container .htmlprogress {
   height: 100%;
   width: 60%;
-  background: #F16529;
+  background-color: #F16529;
 }
 
 section.skills .tech .wrapper-skill .progress-container .cssprogress {
   height: 100%;
-  width: 50%;
-  background: #29A9DF;
+  width: 70%;
+  background-color: #29A9DF;
 }
 
 section.skills .tech .wrapper-skill .progress-container .jsprogress {
   height: 100%;
-  width: 40%;
-  background: #FFC825;
+  width: 50%;
+  background-color: #FFC825;
 }
 
-/* Projetos */
+/*--Projetos--*/
 section.projetos {
   height: 520px;
-  background: #1b1b1b;
+  background-color: #1b1b1b;
 }
 
-section.projetos h1 {
+section.projetos .section-name {
   padding-top: 50px;
 }
 
-/* Sobre */
+/*--Sobre--*/
 section.sobre {
   height: 793px;
-  background: #336279;
+  background-color: #336279;
 }
 
-section.sobre h1 {
+section.sobre .section-name {
   padding-top: 50px;
 }
 
-/* Contatos */
+/*--Contatos--*/
 section.contatos {
   height: 740px;
-  background: #3b3b3b;
+  background-color: #3b3b3b;
 }
 
-section.contatos h1 {
+section.contatos .section-name {
   padding-top: 50px;
 }
 
-/* Footer */
+/*--Footer--*/
 footer {
   height: 100px;
   background: #000;
@@ -297,4 +331,4 @@ footer {
 footer h1 {
   padding-top: 50px;
 }
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=style.css.map */

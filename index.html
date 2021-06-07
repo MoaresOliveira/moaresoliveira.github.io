@@ -3,37 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <title>Moares Oliveira</title>
-
+    <link rel="shortcut icon" href="./assets/img/logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com"/>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;500&display=swap" rel="stylesheet"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;500&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header>
-      <img
-        class="logo"
-        src="./assets/img/logo.png"
-        alt=""
-        style="width: 60px; height: 60px"
-      />
+      <img class="logo" src="./assets/img/logo.png" alt="Logo Moares"/>
 
       <nav>
-        <a href="" lang="en">Skills</a>
-        <a href="">Projetos</a>
-        <a href="">Sobre</a>
-        <a href="">Contatos</a>
+        <a href="#skills" lang="en">Skills</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contatos">Contatos</a>
         <a id="button" href="" lang="en">Download CV</a>
       </nav>
     </header>
+    <a href="#" class="top-button"><i class="far fa-arrow-alt-circle-up"></i></a>
     <!-- Banner -->
     <section class="banner">
       <div class="folder">
@@ -42,11 +32,11 @@
           <h2 class="subtitle">Dev Student</h2>
         </div>
         <button class="button-banner download" lang="en">Download CV</button>
-        <button class="button-banner contatos">Contatos</button>
+        <a href="#contatos"><button class="button-banner contatos">Contatos</button></a>
       </div>
     </section>
     <!-- Skills -->
-    <section class="skills">
+    <section class="skills" id="skills">
       <h1 class="section-name">Skills</h1>
       <div class="tech">
         <div class="html">
@@ -79,18 +69,19 @@
       </div>
     </section>
     <!-- Projetos -->
-    <section class="projetos">
+    <section class="projetos" id="projetos">
       <h1 class="section-name">Projetos</h1>
     </section>
     <!-- Sobre -->
-    <section class="sobre">
+    <section class="sobre" id="sobre">
       <h1 class="section-name">Sobre</h1>
     </section>
     <!-- Contatos -->
-    <section class="contatos">
+    <section class="contatos" id="contatos">
       <h1 class="section-name">Contatos</h1>
     </section>
     <!-- Footer -->
     <footer></footer>
+    <script src="https://kit.fontawesome.com/0dd55cd624.js" crossorigin="anonymous"></script>
   </body>
 </html>

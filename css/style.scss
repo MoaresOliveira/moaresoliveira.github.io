@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+h1, h2 {
+    font-family: 'Press Start 2P', monospace;
+    color: #fff;
+}
+section{
+    text-align: center;
+}
+::-webkit-scrollbar {
+    width: 10px;    
+}
+::-webkit-scrollbar-track {
+    background: #1b1b1b;    
+}
+::-webkit-scrollbar-thumb {
+    background-color: #555;
+    border-radius: 15px;
+    &:hover {
+        background: #A57CFE;
+    }
+}  
+.top-button{
+    color: #fff;
+    font-size: 50px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+/*--Header--*/
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #40403D;
+    border-bottom: 10px solid black;
+    padding: 10px 20px;
+    align-items: center;
+    .logo{
+        width: 60px;
+        height: 60px;
+        border-radius: 100%;
+        box-shadow: 2px 2px 0px 1px #000;
+        &:hover{
+            transform: scale(1.1);
+            box-shadow: 3px 3px 0px 1px #000;
+        }
+    }
+    nav{
+        text-align: right;
+        a{
+            display: inline-flex;
+            align-items: center;
+            color: #fff;
+            font-size: 20px;
+            font-weight: 500;
+            text-decoration: none;
+            margin-right: 30px;
+            font-family: "Fira Code", monospace;
+            &::before{
+                content: '';
+                background: #5F3640;
+                width: 10px;
+                height: 10px;
+                margin-right: 10px;
+                vertical-align: middle;
+            }
+            &:hover:before{
+                background: #ac6777;
+            }
+        }
+        #button{
+            box-shadow: 3px 3px 0px 1px #000;
+            display: inline-block;
+            background-color: #5F3640;
+            padding: 18px 20px;
+            &:hover{
+                transform: translate(-2px, -2px);
+                background-color: #ac6777;
+                box-shadow: 5px 5px 0px 1px #000;
+            }
+        }
+    }
+}
+/*--Banner--*/
+section.banner{
+    height: 807px;
+    background-image: url("/assets/img/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    .folder{
+        max-width: 955px;
+        .box{
+            display: block;
+            position: absolute;
+            width: 627px;
+            height: 184px;
+            left: 91px;
+            top: 196px;
+            background-color: #3A4042;
+            box-shadow: 5px 5px 0px 1px #000;
+            .title, .subtitle{
+                display: flex;
+                text-shadow: 3px 3px 0px #000;
+                justify-content: space-around;
+                cursor: default;
+            }
+            .title{
+                color: #A57CFE;
+                margin-top: 44px;
+                font-size: 40px;
+                margin-left: 13px;
+                margin-right: 14px;
+            }
+            .subtitle{
+                color: #fff;
+                font-size: 30px;
+                margin: 26px 47px 44px 40px;
+            }
+        }
+        .button-banner{
+            box-shadow: 3px 3px 0px 1px #000;
+            display: inline-block;
+            background-color: #5F3640;
+            padding: 17px 18px 20px;
+            color: #fff;
+            font-size: 20px;
+            font-family: "Fira Code", monospace;
+            font-weight: 500;
+            width: 170px;
+            height: 60px;
+            margin-right: 0;
+            cursor: pointer;
+            &:hover{
+                transform: translate(-2px, -2px);
+                background-color: #ac6777;
+                box-shadow: 5px 5px 0px 1px #000;
+            }
+            &.download{
+                margin-left: -150px;
+                margin-top: 338px;
+            }
+            &.contatos{
+                margin-left: 112px;
+            }
+        }
+    }
+}
+/*--Skills--*/
+section.skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 740px;
+    background-color: #0B2E3C;
+    .section-name{
+        display: block;
+        text-align: center;
+        padding-top: 50px;
+        margin: 0 auto;
+    }
+    .tech{
+        padding-top: 50px;
+        div{
+            display: flex;
+            width: 430px;
+            height: 90px;
+            margin-top: 38px;
+        }
+        img{
+            width: 90px;
+            height: 90px;
+        }
+        .wrapper-skill {
+            margin-left: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 330px;
+            height: 90px;
+            text-align: left;
+            .progress-container{
+                margin-top: 16px;
+                width: 320px;
+                height: 40px;
+                background-color: #fff;
+                border: 5px inset #131313;
+                div{
+                    margin: 0;
+                }
+                .htmlprogress{
+                    height: 100%;
+                    width: 60%;
+                    background-color: #F16529;
+                }
+                .cssprogress{
+                    height: 100%;
+                    width: 70%;
+                    background-color: #29A9DF;
+                }
+                .jsprogress{
+                    height: 100%;
+                    width: 50%;
+                    background-color: #FFC825;
+
+                }
+            }
+        }
+    }
+}
+/*--Projetos--*/
+section.projetos{
+    height: 520px;
+    background-color: #1b1b1b;
+    .section-name{
+        padding-top: 50px;
+    }
+}
+/*--Sobre--*/
+section.sobre{
+    height: 793px;
+    background-color: #336279;
+    .section-name{
+        padding-top: 50px;
+    }
+}
+/*--Contatos--*/
+section.contatos{
+    height: 740px;
+    background-color: #3b3b3b;
+    .section-name{
+        padding-top: 50px;
+    }
+}
+/*--Footer--*/
+footer{
+    height: 100px;
+    background: #000;
+    h1{
+        padding-top: 50px;
+    }
+}
