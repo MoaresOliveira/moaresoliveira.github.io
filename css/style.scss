@@ -12,6 +12,9 @@ h1, h2 {
     font-family: 'Press Start 2P', monospace;
     color: #fff;
 }
+h1, h2, p{
+    cursor: default;
+}
 section{
     text-align: center;
 }
@@ -250,59 +253,57 @@ section.projetos{
                 width: 280px;
                 height: 280px;
                 box-shadow: 7px 7px 0px 1px #fff;
-                margin-right: 156px;
-                cursor: pointer;
+                margin-right: 156px;                
+                &:nth-child(1){
+                    background: linear-gradient(#2e2e2e , #1b1b1b);
+                    > img{
+                        width: 60%;
+                    }
+                }
+                &:nth-child(2){
+                    background: #fff;
+                    > img{
+                        width: 90%;
+                    }
+                }
+                &:nth-child(3){
+                    font-family: 'Press Start 2P', monospace;
+                    color: #fff;
+                    background: #5F3640;
+                    > img{
+                        border-radius: 50%;
+                        width: 20%;
+                    }
+                }
+                &:nth-child(4){
+                    background: linear-gradient(#0f0f0f, #1b1b1b) ;
+                    > img{
+                        width: 70%;
+                    }
+                }
                 
-            &:nth-child(1){
-                background: linear-gradient(#2e2e2e , #1b1b1b);
-                > img{
-                    width: 60%;
+                .sobre-projeto{
+                    visibility: hidden;
+                    opacity: 0;
+                    transition: .3s;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    flex-direction: column;
+                    font-family: 'Fira Code', sans-serif;
+                    width: 280px;
+                    height: 280px;
+                    padding: 15px;
+                    background: #3b3b3b;
+                    color: #cfcfcf;
+                    position: absolute;
+                }
+                &:hover .sobre-projeto{
+                    visibility: visible;
+                    opacity: 1;
+                    transform: scale(1.3);
                 }
             }
-            &:nth-child(2){
-                background: #fff;
-                > img{
-                    width: 90%;
-                }
-            }
-            &:nth-child(3){
-                font-family: 'Press Start 2P', monospace;
-                color: #fff;
-                background: #5F3640;
-                > img{
-                    border-radius: 50%;
-                    width: 20%;
-                }
-            }
-            &:nth-child(4){
-                background: linear-gradient(#0f0f0f, #1b1b1b) ;
-                > img{
-                    width: 70%;
-                }
-            }
-            
-            .sobre-projeto{
-                visibility: hidden;
-                opacity: 0;
-                transition: .3s;
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                flex-direction: column;
-                font-family: 'Fira Code', sans-serif;
-                width: 280px;
-                height: 280px;
-                padding: 15px;
-                background: #3b3b3b;
-                color: #cfcfcf;
-                position: absolute;
-            }
-            &:hover .sobre-projeto{
-                visibility: visible;
-                opacity: 1;
-                transform: scale(1.3);
-            }
-        }
         }
         
     }

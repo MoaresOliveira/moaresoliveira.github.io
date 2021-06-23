@@ -16,6 +16,10 @@ h1, h2 {
   color: #fff;
 }
 
+h1, h2, p {
+  cursor: default;
+}
+
 section {
   text-align: center;
 }
@@ -355,7 +359,6 @@ section.projetos .swiper-container .case-container .case {
   -webkit-box-shadow: 7px 7px 0px 1px #fff;
           box-shadow: 7px 7px 0px 1px #fff;
   margin-right: 156px;
-  cursor: pointer;
 }
 
 section.projetos .swiper-container .case-container .case:nth-child(1) {
