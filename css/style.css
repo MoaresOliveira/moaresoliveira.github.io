@@ -8,6 +8,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 h1, h2 {
@@ -104,7 +105,8 @@ header nav a::before {
 }
 
 header nav a:hover:before {
-  background: #ac6777;
+  -webkit-filter: brightness(1.2);
+          filter: brightness(1.2);
 }
 
 header nav #button {
@@ -118,7 +120,8 @@ header nav #button {
 header nav #button:hover {
   -webkit-transform: translate(-2px, -2px);
           transform: translate(-2px, -2px);
-  background-color: #ac6777;
+  -webkit-filter: brightness(1.2);
+          filter: brightness(1.2);
   -webkit-box-shadow: 5px 5px 0px 1px #000;
           box-shadow: 5px 5px 0px 1px #000;
 }
@@ -190,7 +193,8 @@ section.banner .folder .button-banner {
 section.banner .folder .button-banner:hover {
   -webkit-transform: translate(-2px, -2px);
           transform: translate(-2px, -2px);
-  background-color: #ac6777;
+  -webkit-filter: brightness(1.2);
+          filter: brightness(1.2);
   -webkit-box-shadow: 5px 5px 0px 1px #000;
           box-shadow: 5px 5px 0px 1px #000;
 }
@@ -300,6 +304,129 @@ section.projetos {
 
 section.projetos .section-name {
   padding-top: 50px;
+}
+
+section.projetos .btnProjeto {
+  display: block;
+  text-decoration: none;
+  width: 90%;
+  margin: 0 auto;
+  color: #fff;
+  background-color: #5F3640;
+  line-height: 40px;
+}
+
+section.projetos .btnProjeto:hover {
+  -webkit-filter: brightness(1.2);
+          filter: brightness(1.2);
+}
+
+section.projetos .swiper-container {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.projetos .swiper-container .case-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 140px;
+}
+
+section.projetos .swiper-container .case-container .case {
+  border: 1px solid #3f3f3f;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 280px;
+  height: 280px;
+  -webkit-box-shadow: 7px 7px 0px 1px #fff;
+          box-shadow: 7px 7px 0px 1px #fff;
+  margin-right: 156px;
+  cursor: pointer;
+}
+
+section.projetos .swiper-container .case-container .case:nth-child(1) {
+  background: -webkit-gradient(linear, left top, left bottom, from(#2e2e2e), to(#1b1b1b));
+  background: linear-gradient(#2e2e2e, #1b1b1b);
+}
+
+section.projetos .swiper-container .case-container .case:nth-child(1) > img {
+  width: 60%;
+}
+
+section.projetos .swiper-container .case-container .case:nth-child(2) {
+  background: #fff;
+}
+
+section.projetos .swiper-container .case-container .case:nth-child(2) > img {
+  width: 90%;
+}
+
+section.projetos .swiper-container .case-container .case:nth-child(3) {
+  font-family: 'Press Start 2P', monospace;
+  color: #fff;
+  background: #5F3640;
+}
+
+section.projetos .swiper-container .case-container .case:nth-child(3) > img {
+  border-radius: 50%;
+  width: 20%;
+}
+
+section.projetos .swiper-container .case-container .case:nth-child(4) {
+  background: -webkit-gradient(linear, left top, left bottom, from(#0f0f0f), to(#1b1b1b));
+  background: linear-gradient(#0f0f0f, #1b1b1b);
+}
+
+section.projetos .swiper-container .case-container .case:nth-child(4) > img {
+  width: 70%;
+}
+
+section.projetos .swiper-container .case-container .case .sobre-projeto {
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: .3s;
+  transition: .3s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: 'Fira Code', sans-serif;
+  width: 280px;
+  height: 280px;
+  padding: 15px;
+  background: #3b3b3b;
+  color: #cfcfcf;
+  position: absolute;
+}
+
+section.projetos .swiper-container .case-container .case:hover .sobre-projeto {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
 }
 
 /*--Sobre--*/
