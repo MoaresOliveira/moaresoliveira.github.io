@@ -351,13 +351,13 @@ section.skills .tech .wrapper-skill .progress-container .jsprogress {
 
 section.skills .tech .wrapper-skill .progress-container .javaprogress {
   height: 100%;
-  width: 73%;
+  width: 60%;
   background-color: #ee1e0f;
 }
 
 section.skills .tech .wrapper-skill .progress-container .springprogress {
   height: 100%;
-  width: 65%;
+  width: 55%;
   background-color: green;
 }
 
