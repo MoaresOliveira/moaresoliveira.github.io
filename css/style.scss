@@ -95,7 +95,7 @@ header{
 /*--Banner--*/
 section.banner{
     height: 807px;
-    background-image: url("assets/img/bg.jpg");
+    background-image: url("/assets/gif\ banner.gif");
     background-repeat: no-repeat;
     background-size: cover;
     .folder{
@@ -171,6 +171,30 @@ section.skills{
     }
     .tech{
         padding-top: 50px;
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        max-width: 940px;
+        .html{
+            order: 1;
+        }
+        .css {
+            order: 3;
+        }
+        .jscript {
+            order: 5;
+        }
+        .node {
+            order: 2;
+        }
+        .java {
+            order: 4;
+        }
+        .spring {
+            order: 6;
+        }
         div{
             display: flex;
             width: 430px;
@@ -212,6 +236,24 @@ section.skills{
                     height: 100%;
                     width: 50%;
                     background-color: #FFC825;
+
+                }
+                .javaprogress{
+                    height: 100%;
+                    width: 73%;
+                    background-color: #ee1e0f;
+
+                }
+                .springprogress{
+                    height: 100%;
+                    width: 65%;
+                    background-color: green;
+
+                }
+                .nodeprogress{
+                    height: 100%;
+                    width: 45%;
+                    background-color: darkgreen;
 
                 }
             }

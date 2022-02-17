@@ -133,7 +133,7 @@ header nav #button:hover {
 /*--Banner--*/
 section.banner {
   height: 807px;
-  background-image: url("assets/img/bg.jpg");
+  background-image: url("/assets/gif banner.gif");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -237,6 +237,55 @@ section.skills .section-name {
 
 section.skills .tech {
   padding-top: 50px;
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 940px;
+}
+
+section.skills .tech .html {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+section.skills .tech .css {
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+}
+
+section.skills .tech .jscript {
+  -webkit-box-ordinal-group: 6;
+      -ms-flex-order: 5;
+          order: 5;
+}
+
+section.skills .tech .node {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+section.skills .tech .java {
+  -webkit-box-ordinal-group: 5;
+      -ms-flex-order: 4;
+          order: 4;
+}
+
+section.skills .tech .spring {
+  -webkit-box-ordinal-group: 7;
+      -ms-flex-order: 6;
+          order: 6;
 }
 
 section.skills .tech div {
@@ -298,6 +347,24 @@ section.skills .tech .wrapper-skill .progress-container .jsprogress {
   height: 100%;
   width: 50%;
   background-color: #FFC825;
+}
+
+section.skills .tech .wrapper-skill .progress-container .javaprogress {
+  height: 100%;
+  width: 73%;
+  background-color: #ee1e0f;
+}
+
+section.skills .tech .wrapper-skill .progress-container .springprogress {
+  height: 100%;
+  width: 65%;
+  background-color: green;
+}
+
+section.skills .tech .wrapper-skill .progress-container .nodeprogress {
+  height: 100%;
+  width: 45%;
+  background-color: darkgreen;
 }
 
 /*--Projetos--*/
