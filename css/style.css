@@ -136,6 +136,7 @@ section.banner {
   background-image: url("../assets/gifBanner.gif");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: bottom;
 }
 
 section.banner .folder {
@@ -428,21 +429,18 @@ section.projetos .swiper-container .case-container .case {
   margin-right: 156px;
 }
 
+section.projetos .swiper-container .case-container .case > img {
+  min-width: 100px;
+  width: 90%;
+}
+
 section.projetos .swiper-container .case-container .case:nth-child(1) {
   background: -webkit-gradient(linear, left top, left bottom, from(#2e2e2e), to(#1b1b1b));
   background: linear-gradient(#2e2e2e, #1b1b1b);
 }
 
-section.projetos .swiper-container .case-container .case:nth-child(1) > img {
-  width: 60%;
-}
-
 section.projetos .swiper-container .case-container .case:nth-child(2) {
   background: #fff;
-}
-
-section.projetos .swiper-container .case-container .case:nth-child(2) > img {
-  width: 90%;
 }
 
 section.projetos .swiper-container .case-container .case:nth-child(3) {
@@ -456,13 +454,9 @@ section.projetos .swiper-container .case-container .case:nth-child(3) > img {
   width: 20%;
 }
 
-section.projetos .swiper-container .case-container .case:nth-child(4) {
+section.projetos .swiper-container .case-container .case:nth-child(4), section.projetos .swiper-container .case-container .case:nth-child(5) {
   background: -webkit-gradient(linear, left top, left bottom, from(#0f0f0f), to(#1b1b1b));
   background: linear-gradient(#0f0f0f, #1b1b1b);
-}
-
-section.projetos .swiper-container .case-container .case:nth-child(4) > img {
-  width: 70%;
 }
 
 section.projetos .swiper-container .case-container .case .sobre-projeto {

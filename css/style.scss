@@ -98,6 +98,7 @@ section.banner{
     background-image: url("../assets/gifBanner.gif");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: bottom;
     .folder{
         max-width: 955px;
         .box{
@@ -295,18 +296,18 @@ section.projetos{
                 width: 280px;
                 height: 280px;
                 box-shadow: 7px 7px 0px 1px #fff;
-                margin-right: 156px;                
+                margin-right: 156px;
+                > img {
+                    min-width: 100px;
+                    width: 90%;
+                }
                 &:nth-child(1){
                     background: linear-gradient(#2e2e2e , #1b1b1b);
-                    > img{
-                        width: 60%;
-                    }
+                    
                 }
                 &:nth-child(2){
                     background: #fff;
-                    > img{
-                        width: 90%;
-                    }
+                    
                 }
                 &:nth-child(3){
                     font-family: 'Press Start 2P', monospace;
@@ -317,11 +318,9 @@ section.projetos{
                         width: 20%;
                     }
                 }
-                &:nth-child(4){
+                &:nth-child(4), &:nth-child(5) {
                     background: linear-gradient(#0f0f0f, #1b1b1b) ;
-                    > img{
-                        width: 70%;
-                    }
+                    
                 }
                 
                 .sobre-projeto{
