@@ -1,0 +1,430 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: "Fira Code", monospace;
+}
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+h1, h2 {
+    font-family: 'Press Start 2P', monospace;
+    color: #fff;
+}
+h1, h2, p{
+    cursor: default;
+}
+section{
+    text-align: center;
+}
+::-webkit-scrollbar {
+    width: 10px;    
+}
+::-webkit-scrollbar-track {
+    background: #111;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #555;
+    border-radius: 15px;
+    &:hover {
+        background: #A57CFE;
+    }
+}  
+::-webkit-scrollbar-button {
+    background-color: #222;
+    &:hover {
+        background: #A57CFE;
+    }
+}  
+.top-button{
+    color: #fff;
+    font-size: 50px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+/*--Header--*/
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #40403D;
+    border-bottom: 10px solid black;
+    padding: 10px 20px;
+    align-items: center;
+    .logo{
+        width: 60px;
+        height: 60px;
+        border-radius: 100%;
+        box-shadow: 2px 2px 0px 1px #000;
+        &:hover{
+            transform: scale(1.1);
+            box-shadow: 3px 3px 0px 1px #000;
+        }
+    }
+    nav{
+        text-align: right;
+        a{
+            display: inline-flex;
+            align-items: center;
+            color: #fff;
+            font-size: 20px;
+            font-weight: 500;
+            text-decoration: none;
+            margin-right: 30px;
+            font-family: "Fira Code", monospace;
+            &::before{
+                content: '';
+                background: #5F3640;
+                width: 10px;
+                height: 10px;
+                margin-right: 10px;
+                vertical-align: middle;
+            }
+            &:hover:before{
+                filter: brightness(1.2);;
+            }
+        }
+        #button{
+            box-shadow: 3px 3px 0px 1px #000;
+            display: inline-block;
+            background-color: #5F3640;
+            padding: 18px 20px;
+            &:hover{
+                transform: translate(-2px, -2px);
+                filter: brightness(1.2);;
+                box-shadow: 5px 5px 0px 1px #000;
+            }
+        }
+    }
+}
+/*--Banner--*/
+section.banner{
+    height: 807px;
+    background-image: url("../assets/gifBanner.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    .folder{
+        max-width: 955px;
+        .box{
+            display: block;
+            position: absolute;
+            width: 627px;
+            height: 184px;
+            left: 91px;
+            top: 196px;
+            background-color: #3A4042;
+            box-shadow: 5px 5px 0px 1px #000;
+            .title, .subtitle{
+                display: flex;
+                text-shadow: 3px 3px 0px #000;
+                justify-content: space-around;
+                cursor: default;
+            }
+            .title{
+                color: #A57CFE;
+                margin-top: 44px;
+                font-size: 40px;
+                margin-left: 13px;
+                margin-right: 14px;
+            }
+            .subtitle{
+                color: #fff;
+                font-size: 30px;
+                line-height: 34px;
+                margin: 26px 47px 44px 40px;
+            }
+        }
+        .button-banner{
+            box-shadow: 3px 3px 0px 1px #000;
+            display: inline-block;
+            background-color: #5F3640;
+            padding: 17px 18px 20px;
+            color: #fff;
+            font-size: 20px;
+            font-family: "Fira Code", monospace;
+            font-weight: 500;
+            width: 170px;
+            height: 60px;
+            margin-right: 0;
+            text-decoration: none;
+            &:hover{
+                transform: translate(-2px, -2px);
+                filter: brightness(1.2);;
+                box-shadow: 5px 5px 0px 1px #000;
+            }
+            &.download{
+                margin-left: -150px;
+                margin-top: 338px;
+            }
+            &.contatos{
+                margin-left: 112px;
+            }
+        }
+    }
+}
+/*--Skills--*/
+section.skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 740px;
+    background-color: #0B2E3C;
+    .section-name{
+        display: block;
+        text-align: center;
+        padding-top: 50px;
+        margin: 0 auto;
+    }
+    .tech{
+        padding-top: 50px;
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        max-width: 940px;
+        .html{
+            order: 1;
+        }
+        .css {
+            order: 3;
+        }
+        .jscript {
+            order: 5;
+        }
+        .node {
+            order: 2;
+        }
+        .java {
+            order: 4;
+        }
+        .spring {
+            order: 6;
+        }
+         > div{
+            display: flex;
+            align-items: center;
+            width: 430px;
+            height: 90px;
+            margin-top: 38px;
+        }
+        img{
+            width: 90px;
+            height: 90px;
+        }
+        .wrapper-skill {
+            margin-left: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 330px;
+            height: 90px;
+            text-align: left;
+            .progress-container{
+                margin-top: 16px;
+                width: 320px;
+                height: 40px;
+                background-color: #fff;
+                border: 5px inset #131313;
+                div{
+                    margin: 0;
+                }
+                .htmlprogress{
+                    height: 100%;
+                    width: 60%;
+                    background-color: #F16529;
+                }
+                .cssprogress{
+                    height: 100%;
+                    width: 70%;
+                    background-color: #29A9DF;
+                }
+                .jsprogress{
+                    height: 100%;
+                    width: 70%;
+                    background-color: #007ACC;
+
+                }
+                .javaprogress{
+                    height: 100%;
+                    width: 80%;
+                    background-color: #ee1e0f;
+
+                }
+                .springprogress{
+                    height: 100%;
+                    width: 75%;
+                    background-color: green;
+
+                }
+                .nodeprogress{
+                    height: 100%;
+                    width: 45%;
+                    background-color: darkgreen;
+
+                }
+            }
+        }
+    }
+}
+/*--Projetos--*/
+section.projetos{
+    height: 520px;
+    background-color: #1b1b1b;
+    .section-name{
+        padding-top: 50px;
+    }
+    .btnProjeto{
+        display: block;
+        text-decoration: none;
+        width: 90%;
+        margin:0 auto;
+        color: #fff;
+        background-color: #5F3640;
+        line-height: 40px;
+        &:hover{
+            filter: brightness(1.2);
+        }
+    }
+    .swiper-container{
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        .case-container{
+            display: flex;
+            margin-left: 140px;
+            .case{
+                border: 1px solid #3f3f3f;
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 280px;
+                height: 280px;
+                box-shadow: 7px 7px 0px 1px #fff;
+                margin-right: 156px;
+                > img {
+                    min-width: 100px;
+                    width: 90%;
+                }
+                &:nth-child(1){
+                    background: linear-gradient(#2e2e2e , #1b1b1b);
+                    
+                }
+                &:nth-child(2){
+                    background: #fff;
+                    
+                }
+                &:nth-child(3){
+                    font-family: 'Press Start 2P', monospace;
+                    color: #fff;
+                    background: linear-gradient(#0f0f0f, #1b1b1b) ;
+                }
+                &:nth-child(4), &:nth-child(5) {
+                    background: linear-gradient(#0f0f0f, #1b1b1b) ;
+                }
+                
+                .sobre-projeto{
+                    visibility: hidden;
+                    opacity: 0;
+                    transition: .3s;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    flex-direction: column;
+                    font-family: 'Fira Code', sans-serif;
+                    width: 280px;
+                    height: 280px;
+                    padding: 15px;
+                    background: #3b3b3b;
+                    color: #cfcfcf;
+                    position: absolute;
+                }
+                &:hover .sobre-projeto{
+                    visibility: visible;
+                    opacity: 1;
+                    transform: scale(1.3);
+                }
+            }
+        }
+        
+    }
+}
+/*--Sobre--*/
+section.sobre{
+    height: 793px;
+    background-color: #336279;
+    .section-name{
+        padding-top: 50px;
+    }
+    .content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 50px;
+        color: #fff;
+        font-size: 20px;
+        img {
+            float: left;
+            margin: 5px;
+            border-radius: 15px;
+        }
+    }
+}
+/*--Contatos--*/
+section.contatos{
+    height: 740px;
+    background-color: #3b3b3b;
+    .section-name{
+        padding-top: 50px;
+    }
+    .content {
+        padding: 50px;
+        color: #fff;
+        font-size: 20px;
+        display: grid;
+        place-items: center;
+        div {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            label {
+                text-align: start;
+                padding: 10px;
+            }
+            input, textarea {
+                margin-bottom: 20px;
+                border-radius: 15px;
+                border: 1px solid #f3f3f3;
+                resize: none;
+                padding: 10px;
+                font-size: 16px;
+            }
+            
+            .button {
+                width: 100%;
+                display: flex;
+                justify-content: flex-end;
+                button {
+                    display: block;
+                    background-color: #0e8114;
+                    padding: 10px 20px;
+                    width: fit-content;
+                    border-radius: 15px;
+                }
+            }
+        }
+    }
+}
+/*--Footer--*/
+footer{
+    height: 100px;
+    background: #000;
+    h1{
+        padding-top: 50px;
+    }
+}

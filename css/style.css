@@ -1,0 +1,439 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: "Fira Code", monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+h1, h2 {
+  font-family: "Press Start 2P", monospace;
+  color: #fff;
+}
+
+h1, h2, p {
+  cursor: default;
+}
+
+section {
+  text-align: center;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #111;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #555;
+  border-radius: 15px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #A57CFE;
+}
+
+::-webkit-scrollbar-button {
+  background-color: #222;
+}
+::-webkit-scrollbar-button:hover {
+  background: #A57CFE;
+}
+
+.top-button {
+  color: #fff;
+  font-size: 50px;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+}
+
+/*--Header--*/
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #40403D;
+  border-bottom: 10px solid black;
+  padding: 10px 20px;
+  align-items: center;
+}
+header .logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  box-shadow: 2px 2px 0px 1px #000;
+}
+header .logo:hover {
+  transform: scale(1.1);
+  box-shadow: 3px 3px 0px 1px #000;
+}
+header nav {
+  text-align: right;
+}
+header nav a {
+  display: inline-flex;
+  align-items: center;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  margin-right: 30px;
+  font-family: "Fira Code", monospace;
+}
+header nav a::before {
+  content: "";
+  background: #5F3640;
+  width: 10px;
+  height: 10px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+header nav a:hover:before {
+  filter: brightness(1.2);
+}
+header nav #button {
+  box-shadow: 3px 3px 0px 1px #000;
+  display: inline-block;
+  background-color: #5F3640;
+  padding: 18px 20px;
+}
+header nav #button:hover {
+  transform: translate(-2px, -2px);
+  filter: brightness(1.2);
+  box-shadow: 5px 5px 0px 1px #000;
+}
+
+/*--Banner--*/
+section.banner {
+  height: 807px;
+  background-image: url("../assets/gifBanner.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+section.banner .folder {
+  max-width: 955px;
+}
+section.banner .folder .box {
+  display: block;
+  position: absolute;
+  width: 627px;
+  height: 184px;
+  left: 91px;
+  top: 196px;
+  background-color: #3A4042;
+  box-shadow: 5px 5px 0px 1px #000;
+}
+section.banner .folder .box .title, section.banner .folder .box .subtitle {
+  display: flex;
+  text-shadow: 3px 3px 0px #000;
+  justify-content: space-around;
+  cursor: default;
+}
+section.banner .folder .box .title {
+  color: #A57CFE;
+  margin-top: 44px;
+  font-size: 40px;
+  margin-left: 13px;
+  margin-right: 14px;
+}
+section.banner .folder .box .subtitle {
+  color: #fff;
+  font-size: 30px;
+  line-height: 34px;
+  margin: 26px 47px 44px 40px;
+}
+section.banner .folder .button-banner {
+  box-shadow: 3px 3px 0px 1px #000;
+  display: inline-block;
+  background-color: #5F3640;
+  padding: 17px 18px 20px;
+  color: #fff;
+  font-size: 20px;
+  font-family: "Fira Code", monospace;
+  font-weight: 500;
+  width: 170px;
+  height: 60px;
+  margin-right: 0;
+  text-decoration: none;
+}
+section.banner .folder .button-banner:hover {
+  transform: translate(-2px, -2px);
+  filter: brightness(1.2);
+  box-shadow: 5px 5px 0px 1px #000;
+}
+section.banner .folder .button-banner.download {
+  margin-left: -150px;
+  margin-top: 338px;
+}
+section.banner .folder .button-banner.contatos {
+  margin-left: 112px;
+}
+
+/*--Skills--*/
+section.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 740px;
+  background-color: #0B2E3C;
+}
+section.skills .section-name {
+  display: block;
+  text-align: center;
+  padding-top: 50px;
+  margin: 0 auto;
+}
+section.skills .tech {
+  padding-top: 50px;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 940px;
+}
+section.skills .tech .html {
+  order: 1;
+}
+section.skills .tech .css {
+  order: 3;
+}
+section.skills .tech .jscript {
+  order: 5;
+}
+section.skills .tech .node {
+  order: 2;
+}
+section.skills .tech .java {
+  order: 4;
+}
+section.skills .tech .spring {
+  order: 6;
+}
+section.skills .tech > div {
+  display: flex;
+  align-items: center;
+  width: 430px;
+  height: 90px;
+  margin-top: 38px;
+}
+section.skills .tech img {
+  width: 90px;
+  height: 90px;
+}
+section.skills .tech .wrapper-skill {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 330px;
+  height: 90px;
+  text-align: left;
+}
+section.skills .tech .wrapper-skill .progress-container {
+  margin-top: 16px;
+  width: 320px;
+  height: 40px;
+  background-color: #fff;
+  border: 5px inset #131313;
+}
+section.skills .tech .wrapper-skill .progress-container div {
+  margin: 0;
+}
+section.skills .tech .wrapper-skill .progress-container .htmlprogress {
+  height: 100%;
+  width: 60%;
+  background-color: #F16529;
+}
+section.skills .tech .wrapper-skill .progress-container .cssprogress {
+  height: 100%;
+  width: 70%;
+  background-color: #29A9DF;
+}
+section.skills .tech .wrapper-skill .progress-container .jsprogress {
+  height: 100%;
+  width: 70%;
+  background-color: #007ACC;
+}
+section.skills .tech .wrapper-skill .progress-container .javaprogress {
+  height: 100%;
+  width: 80%;
+  background-color: #ee1e0f;
+}
+section.skills .tech .wrapper-skill .progress-container .springprogress {
+  height: 100%;
+  width: 75%;
+  background-color: green;
+}
+section.skills .tech .wrapper-skill .progress-container .nodeprogress {
+  height: 100%;
+  width: 45%;
+  background-color: darkgreen;
+}
+
+/*--Projetos--*/
+section.projetos {
+  height: 520px;
+  background-color: #1b1b1b;
+}
+section.projetos .section-name {
+  padding-top: 50px;
+}
+section.projetos .btnProjeto {
+  display: block;
+  text-decoration: none;
+  width: 90%;
+  margin: 0 auto;
+  color: #fff;
+  background-color: #5F3640;
+  line-height: 40px;
+}
+section.projetos .btnProjeto:hover {
+  filter: brightness(1.2);
+}
+section.projetos .swiper-container {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+}
+section.projetos .swiper-container .case-container {
+  display: flex;
+  margin-left: 140px;
+}
+section.projetos .swiper-container .case-container .case {
+  border: 1px solid #3f3f3f;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 280px;
+  height: 280px;
+  box-shadow: 7px 7px 0px 1px #fff;
+  margin-right: 156px;
+}
+section.projetos .swiper-container .case-container .case > img {
+  min-width: 100px;
+  width: 90%;
+}
+section.projetos .swiper-container .case-container .case:nth-child(1) {
+  background: linear-gradient(#2e2e2e, #1b1b1b);
+}
+section.projetos .swiper-container .case-container .case:nth-child(2) {
+  background: #fff;
+}
+section.projetos .swiper-container .case-container .case:nth-child(3) {
+  font-family: "Press Start 2P", monospace;
+  color: #fff;
+  background: linear-gradient(#0f0f0f, #1b1b1b);
+}
+section.projetos .swiper-container .case-container .case:nth-child(4), section.projetos .swiper-container .case-container .case:nth-child(5) {
+  background: linear-gradient(#0f0f0f, #1b1b1b);
+}
+section.projetos .swiper-container .case-container .case .sobre-projeto {
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  font-family: "Fira Code", sans-serif;
+  width: 280px;
+  height: 280px;
+  padding: 15px;
+  background: #3b3b3b;
+  color: #cfcfcf;
+  position: absolute;
+}
+section.projetos .swiper-container .case-container .case:hover .sobre-projeto {
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1.3);
+}
+
+/*--Sobre--*/
+section.sobre {
+  height: 793px;
+  background-color: #336279;
+}
+section.sobre .section-name {
+  padding-top: 50px;
+}
+section.sobre .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  color: #fff;
+  font-size: 20px;
+}
+section.sobre .content img {
+  float: left;
+  margin: 5px;
+  border-radius: 15px;
+}
+
+/*--Contatos--*/
+section.contatos {
+  height: 740px;
+  background-color: #3b3b3b;
+}
+section.contatos .section-name {
+  padding-top: 50px;
+}
+section.contatos .content {
+  padding: 50px;
+  color: #fff;
+  font-size: 20px;
+  display: grid;
+  place-items: center;
+}
+section.contatos .content div {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+section.contatos .content div label {
+  text-align: start;
+  padding: 10px;
+}
+section.contatos .content div input, section.contatos .content div textarea {
+  margin-bottom: 20px;
+  border-radius: 15px;
+  border: 1px solid #f3f3f3;
+  resize: none;
+  padding: 10px;
+  font-size: 16px;
+}
+section.contatos .content div .button {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+section.contatos .content div .button button {
+  display: block;
+  background-color: #0e8114;
+  padding: 10px 20px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 15px;
+}
+
+/*--Footer--*/
+footer {
+  height: 100px;
+  background: #000;
+}
+footer h1 {
+  padding-top: 50px;
+}/*# sourceMappingURL=style.css.map */
